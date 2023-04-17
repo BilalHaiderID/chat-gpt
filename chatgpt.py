@@ -21,7 +21,8 @@ def logo():
 def main():
     logo()
     while True:
-        openai.api_key = "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"
+        openai.organization = "org-9Fc5CYMJaDypNszkUekL1bbj"
+        openai.api_key = "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"
         content = input(f" User : ")
         completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",

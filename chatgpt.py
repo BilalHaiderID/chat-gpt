@@ -17,12 +17,11 @@ def logo():
           88   8     88          88    
           Y888P      88          YP 
 -----------------------------------------------{white}""")
-#_________[ OPENAI API KEY ]______>>
-openai.api_key = "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"
 #_________[ MAIN MENU ]__________>>
 def main():
     logo()
     while True:
+        openai.api_key = "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"
         content = input(f" User : ")
         completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
